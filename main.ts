@@ -75,6 +75,7 @@ namespace gamejam {
      * purposes. (In the final collaborative game, this may look different.)
      */
     function end(win?: boolean): void {
+        console.log("win is " + win + typeof win)
         if (win !== undefined) {
             info.stopCountdown();
             _win = win;
